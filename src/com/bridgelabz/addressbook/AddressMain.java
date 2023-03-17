@@ -16,7 +16,7 @@ public class AddressMain {
 		String action = null;
 		do {
 			System.out.println(" \n Enter what action you want to perform: ");
-			System.out.println(" \n 1. Add  \n 2. Edit  \n 3. Exit");
+			System.out.println(" \n 1. Add  \n 2. Edit	\n 3. Delete  \n 4. Exit");
 			action = sc.next();
 			
 			switch (action) {
@@ -29,6 +29,9 @@ public class AddressMain {
 				Cp.edit();
 				break;
 			
+			case "delete":
+				Cp.delete();
+				break;
 			}
 		}while(action != "exit");
 		

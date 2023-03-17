@@ -111,4 +111,15 @@ public class ContactPerson {
 		   
 	}
 	
+	void delete()
+    {
+        System.out.println("Enter the person name whose name you want to delete");
+        String Name = sc.next();
+        
+        if(Name.equals(person.getFname())) {
+        	arr[0] = null;
+        }
+        
+    }
+	
 }
