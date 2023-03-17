@@ -107,6 +107,12 @@ public class ContactPerson {
 			        	}   
 		
 			        arr[0] = person;
+			        
+			        for (int j = 0; j < arr.length; j++) {
+						if (arr[j] == null)
+							break;
+						System.out.println(arr[i]);
+					}
 		        }
 		   
 	}
@@ -119,6 +125,12 @@ public class ContactPerson {
         if(Name.equals(person.getFname())) {
         	arr[0] = null;
         }
+        
+        for (int j = 0; j < arr.length; j++) {
+			if (arr[j] == null)
+				break;
+			System.out.println(arr[i]);
+		}
         
     }
 	
