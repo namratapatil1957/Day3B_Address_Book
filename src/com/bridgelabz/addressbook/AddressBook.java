@@ -73,5 +73,11 @@ public class AddressBook {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "AddressBook [fname=" + fname + ", lname=" + lname + ", address=" + address + ", city=" + city
+				+ ", state=" + state + ", zip=" + zip + ", phone_no=" + phone_no + ", email=" + email + "]";
+	}
+	
 }
